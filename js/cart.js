@@ -1,6 +1,6 @@
 import { supabase } from "./supabase.js";
 
-export async function addToCart(title, price, category, image) {
+export async function addToCart(title, price, category) {
   const { data: authData } = await supabase.auth.getUser();
   const user = authData?.user;
 
@@ -23,7 +23,7 @@ export async function addToCart(title, price, category, image) {
   } else {
     const { data: newRow, error: err } = await supabase
       .from("products")
-      .insert({ title, category, price, image })
+      .insert({ title, category, price })
       .select("id")
       .single();
 
