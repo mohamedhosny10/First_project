@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - TechUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="row w-100 align-items-center">
+        <div class="col-3">
+          <a href="../home/home.html" class="navbar-brand">TechUp</a>
+        </div>
+        <div class="col-6">
+          <div class="d-none d-lg-flex justify-content-center gap-4">
+            <a href="../home/home.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link active">Products</a>
+            <a href="../categories/categories.html" class="nav-link">Categories</a>
+            <a href="../about/about.html" class="nav-link">About</a>
+            <a href="../contact/contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="navbar-icons justify-content-end">
+            <img src="../home/assets/shopping-cart.svg" alt="Cart" class="nav-icon">
+            <img src="../home/assets/user.svg" alt="Profile" class="nav-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Our Products</h1>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All</button>
+        <button class="filter-tab" data-category="laptops">Laptops</button>
+        <button class="filter-tab" data-category="smartphones">Smartphones</button>
+        <button class="filter-tab" data-category="headphones">Headphones</button>
+        <button class="filter-tab" data-category="smartwatches">Smartwatches</button>
+        <button class="filter-tab" data-category="tablets">Tablets</button>
+        <button class="filter-tab" data-category="accessories">Accessories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-section">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="laptops">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=400&fit=crop&q=85" 
+               alt="MacBook Pro laptop by Ales Nesetril on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Laptops</div>
+            <h3 class="product-name">MacBook Pro 16"</h3>
+            <div class="product-footer">
+              <span class="product-price">$2499</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="smartphones">
+          <img src="https://images.unsplash.com/photo-1592286927505-4eb0cc6b7be2?w=500&h=400&fit=crop&q=85" 
+               alt="iPhone 15 Pro by Tyler Lastovich on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Smartphones</div>
+            <h3 class="product-name">iPhone 15 Pro</h3>
+            <div class="product-footer">
+              <span class="product-price">$999</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="headphones">
+          <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?w=500&h=400&fit=crop" 
+               alt="Sony headphones by Stas Knop on Pexels" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Headphones</div>
+            <h3 class="product-name">Sony WH-1000XM5</h3>
+            <div class="product-footer">
+              <span class="product-price">$399</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="smartwatches">
+          <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&h=400&fit=crop&q=85" 
+               alt="Apple Watch Ultra by Vojtech Bruzek on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Smartwatches</div>
+            <h3 class="product-name">Apple Watch Ultra</h3>
+            <div class="product-footer">
+              <span class="product-price">$799</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="tablets">
+          <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&h=400&fit=crop&q=85" 
+               alt="iPad Pro by Daniel Romero on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Tablets</div>
+            <h3 class="product-name">iPad Pro 12.9"</h3>
+            <div class="product-footer">
+              <span class="product-price">$1099</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="laptops">
+          <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&h=400&fit=crop&q=85" 
+               alt="Dell XPS 13 laptop by Luca Bravo on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Laptops</div>
+            <h3 class="product-name">Dell XPS 13</h3>
+            <div class="product-footer">
+              <span class="product-price">$1299</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" data-category="smartphones">
+          <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500&h=400&fit=crop&q=85" 
+               alt="Samsung Galaxy S24 by Shiwa ID on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Smartphones</div>
+            <h3 class="product-name">Samsung Galaxy S24</h3>
+            <div class="product-footer">
+              <span class="product-price">$899</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" data-category="headphones">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=400&fit=crop&q=85" 
+               alt="AirPods Pro by Jippe Joosten on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Headphones</div>
+            <h3 class="product-name">AirPods Pro</h3>
+            <div class="product-footer">
+              <span class="product-price">$249</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card" data-category="smartwatches">
+          <img src="https://images.unsplash.com/photo-1579721840641-7d0e67f1204e?w=500&h=400&fit=crop&q=85" 
+               alt="Samsung Galaxy Watch by Daniel Romero on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Smartwatches</div>
+            <h3 class="product-name">Samsung Galaxy Watch 6</h3>
+            <div class="product-footer">
+              <span class="product-price">$349</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card" data-category="tablets">
+          <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&h=400&fit=crop&q=85" 
+               alt="Microsoft Surface Pro by Daniel Romero on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Tablets</div>
+            <h3 class="product-name">Microsoft Surface Pro 9</h3>
+            <div class="product-footer">
+              <span class="product-price">$1199</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card" data-category="accessories">
+          <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=400&fit=crop&q=85" 
+               alt="Logitech mouse by Andres Urena on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-name">Logitech MX Master 3S</h3>
+            <div class="product-footer">
+              <span class="product-price">$99</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card" data-category="accessories">
+          <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&h=400&fit=crop&q=85" 
+               alt="Anker power bank by Possessed Photography on Unsplash" 
+               class="product-image">
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-name">Anker PowerBank</h3>
+            <div class="product-footer">
+              <span class="product-price">$79</span>
+              <button class="btn-view">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="footer-logo">TechUp</div>
+          <p class="footer-description">Your destination for the latest tech products.</p>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#">All Products</a></li>
+            <li><a href="../categories/categories.html">Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Account Column -->
+        <div class="footer-column">
+          <h4>Account</h4>
+          <ul class="footer-links">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 TechUp. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
