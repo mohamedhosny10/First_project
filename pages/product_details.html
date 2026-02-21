@@ -17,7 +17,7 @@
     <link rel="icon" href="../assets/favicon2png.png" />
     <title>TechUp - Product Details</title>
   </head>
-  <body>
+  <body class="bg-light text-color">
     <header>
       <nav class="navbar navbar-expand-lg bg-custom navbar-dark py-3">
         <div class="container-fluid">
@@ -42,55 +42,28 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="cart.html">Cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="register.html">Register</a>
-              </li>
-
+              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+              <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Products
-                </a>
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="products.html?category=laptops"
-                      >Laptops</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="products.html?category=smartphones"
-                      >Mobiles</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="products.html?category=laptops">Laptops</a></li>
+                  <li><a class="dropdown-item" href="products.html?category=smartphones">Mobiles</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link" id="logoutBtn" href="home.html" style="display: none"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main class="container my-5" style="min-height: 50vh">
-      <h2>Product Details</h2>
-      <p>Detailed information about the product will appear here.</p>
+      <div id="productDetails">
+        <p>Loading...</p>
+      </div>
     </main>
     <footer>
       <div class="container">
@@ -102,21 +75,10 @@
           <div class="col-md-4 mb-3">
             <h5>Quick Links</h5>
             <ul class="list-unstyled">
-              <li>
-                <a href="home.html" class="text-decoration-none text-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="products.html" class="text-decoration-none text-white"
-                  >Products</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="text-decoration-none text-white"
-                  >Contact</a
-                >
-              </li>
+              <li><a href="home.html" class="text-decoration-none text-white">Home</a></li>
+              <li><a href="products.html" class="text-decoration-none text-white">Products</a></li>
+              <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+              <li><a href="contact.html" class="text-decoration-none text-white">Contact</a></li>
             </ul>
           </div>
           <div class="col-md-4 mb-3">
@@ -148,6 +110,8 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/productDetails.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

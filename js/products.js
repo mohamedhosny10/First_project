@@ -27,7 +27,10 @@ function displayProducts(products) {
     <h4 class="card-title">${product.title}</h4>
     <p class="card-text small flex-grow-1">${product.description}</p>
     <h5 class="fw-bold my-2">${product.price}</h5>
-    <button class="btn btn-primary mt-2" onclick='addToCart(${JSON.stringify(product.title)}, ${product.price}, ${JSON.stringify(product.category)})'>Add to Cart</button>
+    <div class="d-flex gap-2">
+      <button class="btn btn-primary mt-2" onclick='addToCart(${JSON.stringify(product.title)}, ${product.price}, ${JSON.stringify(product.category)})'>Add to Cart</button>
+      <a href="product_details.html?id=${product.id}" class="btn btn-outline-primary mt-2 details-btn">Details</a>
+    </div>
     </div>
     </div>
 
