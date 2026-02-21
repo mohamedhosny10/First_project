@@ -40,5 +40,10 @@ function displayProducts(products) {
 }
 async function loadCategory(category) {
   await fetchProducts(category);
+  localStorage.setItem("lastCategory", category);
 }
-loadCategory("smartphones");
+const urlParams = new URLSearchParams(window.location.search);
+const categoryFromUrl = urlParams.get("category");
+const savedCategory = localStorage.getItem("lastCategory");
+const category = categoryFromUrl || savedCategory || "smartphones";
+loadCategory(category);
